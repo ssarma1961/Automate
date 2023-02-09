@@ -1,0 +1,6 @@
+Cmd to set a schedule to wake up the system: pmset repeat wake MTWRFSU 5:55:00
+A cron job (can be run by any user of the system) is required to run a job at specific time.
+a. From terminal : crontab -e : this lists the existing cron jobs. Edit this file so that the chosen script runs at specified time.
+Each command on its own line.
+Eg: 00 06 * * * /Users/john/opt/anaconda3/bin/python3 /Users/john/Documents/GitHub/tiny_python_projects/newsapi_us_hyperlink.py
+05 06 * * * /Users/john/opt/anaconda3/bin/python3 /Users/john/Documents/GitHub/tiny_python_projects/newsapi_India_hyperlink.py
